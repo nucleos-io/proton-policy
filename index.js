@@ -8,7 +8,7 @@
  class ProtonPolicy {
 
   constructor(proton) {
-    super(proton)
+    this.proton = proton
   }
 
   expose(policy) {
@@ -24,3 +24,5 @@
   }
 
 }
+
+module.exports = ProtonPolicy
