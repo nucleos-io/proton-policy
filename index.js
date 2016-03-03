@@ -1,26 +1,16 @@
 'use strict'
 
+const BaseClass = require('proton-base-class')
+
 /**
  * @class
  * @classdesc this class define a proton policy
  * @author Luis Hernandez
  */
- class ProtonPolicy {
+ class ProtonPolicy extends BaseClass {
 
   constructor(proton) {
-    this.proton = proton
-  }
-
-  expose(policy) {
-    global[this.name] = policy
-  }
-
-  get name() {
-    return this.constructor.name
-  }
-
-  set fileName(fileName) {
-    this.fileName = fileName
+    super(proton)
   }
 
 }
